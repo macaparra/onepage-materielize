@@ -1,0 +1,177 @@
+::selection{
+    color: #fff;
+    background:  black;
+} 
+
+.wrapper{
+    margin-top: -22px;
+    width: 54% !important;
+    padding: 40px 30px 50px 30px;
+    border-radius: 27px;
+    text-align: center;
+    box-shadow: 0px 1px 15px rgb(0 0 0 / 10%);
+    margin-bottom: -31px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    background-color: black;
+    color: white;
+}
+
+.wrapper header{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.wrapper form{
+    margin: 40px 0;
+}
+
+form .field{
+    width: 100%;
+    margin-bottom: 20px;
+    color: white;
+}
+
+form .field.shake{
+    animation: shake 0.3s ease-in-out;
+    color: white;
+}
+
+@keyframes shake {
+    0%, 100%{
+        margin-left: 0px;
+    }
+    20%, 80%{
+        margin-left: -12px;
+    }
+    40%, 60%{
+        margin-left: 12px;
+    }
+}
+
+form .field .input-area{
+    height: 50px;
+    width: 100%;
+    position: relative;
+}
+
+form input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 45px;
+    font-size: 18px;
+    background: none;
+    border-radius: 5px;
+    border: 1px solid white;
+    border-bottom-width: 2px;
+    transition: all 0.2s ease;
+    color: white;
+    border-color: white !important;
+   
+}
+
+
+
+form .field.shake input,
+form .field.error input{
+    border-color: #dc3545 !important;
+}
+
+.field .input-area i{
+    position: absolute;
+    top: 50%;
+    font-size: 18px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.input-area .icon{
+    left: 15px;
+    border-bottom: white;
+    transition: color 0.2s ease;
+}
+
+.input-area .error-icon{
+    right: 15px;
+    color: #dc3545;
+}
+
+
+
+form .field.shake input:focus ~ .icon,
+form .field.error input:focus ~ .icon{
+    color: #bfbfbf;
+}
+
+form input::placeholder{
+    color: #bfbfbf;
+    font-size: 17px;
+}
+
+form .field .error-txt{
+    color: #dc3545;
+    text-align: left;
+    margin-top: 5px;
+}
+
+form .field .error{
+    display: none;
+}
+
+    form .field.shake .error,
+    form .field.error .error{
+    display: block;
+}
+
+form .pass-txt{
+    text-align: left;
+    margin-top: -10px;
+    color: white;
+}
+
+.wrapper a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+form input[type="submit"]{
+    height: 50px;
+    margin-top: 30px;
+    color: white;
+    padding: 0;
+    border: none;
+    background: black;
+    cursor: pointer;
+    border: 2px solid white;
+    transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover{
+    background: white;
+    color: black;
+}
+
+@media(max-width:500px){
+    h1.catalog {
+        font-size: 22px !important;
+}
+}
+
+
+form input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 45px;
+    font-size: 18px;
+    background: none;
+    caret-color: black;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+    border-bottom-width: 2px;
+    transition: all 0.2s ease;
+}

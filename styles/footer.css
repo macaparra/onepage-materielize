@@ -1,0 +1,16 @@
+.footer-legal{
+    background-color: black;
+    text-align: center;
+    margin-top: 29px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 14px;
+    margin-bottom: -32px;
+}
+
+.logo-footer{
+    width: 35px;
+    margin-top: 6px;
+    margin-right: 10px;
+}
